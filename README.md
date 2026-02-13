@@ -8,9 +8,9 @@
     Shang Liu, Hanyu Pei, Zeyan Liu*
 </p>
 
-<p align="center">
+<!-- <p align="center">
     <a href="mailto:shang.liu@louisville.edu">shang.liu@louisville.edu</a>
-</p>
+</p> -->
 
 
 
@@ -119,7 +119,7 @@ python jailbreak.py -model_path ./models/Qwen3-4B-Instruct-2507 \
 We collected all experiments logs and they could be downloaded from [Google drive](https://drive.google.com/file/d/1Qu3pEfdQDkjHmNd90UxRhnTNExURIL2N/view?usp=sharing). It's about 180M. Feel free to analyze it.
 
 # 4. Citation
-If you have any questions, please start a issue or contact shangliu@louisville.edu.
+If you have any questions, please start a issue or contact shang.liu@louisville.edu.
 
 If you find this code useful, please consider citing:
 ```
