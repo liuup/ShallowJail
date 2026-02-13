@@ -81,8 +81,8 @@ class ShallowJail:
                 ).to(self.model.device)
 
                 with torch.no_grad():
-                    outputs_1 = self.model(inputs_1, output_hidden_states=True)
-                    outputs_2 = self.model(inputs_2, output_hidden_states=True)
+                    outputs_1 = self.model(inputs_1["input_ids"], output_hidden_states=True)
+                    outputs_2 = self.model(inputs_2["input_ids"], output_hidden_states=True)
                 
                 for layer in range(len(outputs_1.hidden_states)):
                     state_1 = outputs_1.hidden_states[layer][:, -1, :]
