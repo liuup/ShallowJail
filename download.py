@@ -1,8 +1,8 @@
 
 from huggingface_hub import snapshot_download
 
-model_id = "Qwen/Qwen3-VL-4B-Instruct"  # 替换为你想要下载的模型ID
-local_dir = "./models/Qwen3-VL-4B-Instruct" # 本地保存路径
+model_id = "Qwen/Qwen3-4B-Instruct-2507"  # 替换为你想要下载的模型ID
+local_dir = "./models/Qwen3-4B-Instruct-2507" # 本地保存路径
 
 snapshot_download(
     repo_id=model_id,

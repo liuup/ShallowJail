@@ -20,11 +20,12 @@ def run_cmd(config):
 if __name__ == "__main__":
     # 和args一一对应就行
     config = {
-        "python": ["./jailbreak.py"], # 要执行的脚本名
+        "python": ["jailbreak.py"], # 要执行的脚本名
         
-        "model_path": ["/root/shang/fakespeech/models/Qwen3-4B-Instruct-2507"], 
+        "model_path": ["./models/Qwen3-4B-Instruct-2507"], 
+        "guard_path": ["./models/Qwen3Guard-Gen-4B"],
         "prompt_path": ["./data/advbench.txt"],
-        "alpha": [5.5],
+        "alpha": [5, 5.5],
         "pre_tokens": [50],
         "beta": [0.5],
         "max_new_tokens": [700],
