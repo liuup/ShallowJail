@@ -1,8 +1,7 @@
-<!-- ShallowJail: Steering Jailbreaks against Large Language Models -->
 
-<p align="center" style="font-size: 1.5em; font-weight: bold;">
+<h2 align="center">
     ShallowJail: Steering Jailbreaks against Large Language Models
-</p>
+</h2>
 
 <p align="center">
     Shang Liu, Hanyu Pei, Zeyan Liu*
@@ -16,7 +15,7 @@
     <code>shang.liu@louisville.edu</code>
 </p>
 
-
+---
 
 ![framework](./images/framework.png)
 
