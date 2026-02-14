@@ -31,7 +31,7 @@ We recommend using [uv](https://github.com/astral-sh/uv) to install dependencies
 ```
 
 ## 1.2 Hardware
-We have tested the code in NVIDIA RTX 5090. Here is the detailed GPU and driver environment in Ubuntu:
+We have tested the code in NVIDIA RTX 5090. Here is the detailed GPU and driver environment in Ubuntu 22.04.5 LTS:
 
 nvidia-smi:
 ```
