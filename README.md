@@ -8,9 +8,13 @@
     Shang Liu, Hanyu Pei, Zeyan Liu*
 </p>
 
-<!-- <p align="center">
-    <a href="mailto:shang.liu@louisville.edu">shang.liu@louisville.edu</a>
-</p> -->
+<p align="center">
+    University of Louisville, KY, USA
+</p>
+
+<p align="center">
+    <code>shang.liu@louisville.edu</code>
+</p>
 
 
 
@@ -50,6 +54,18 @@ cudnn:
 ```
 root@3a00f0d2bf79:~/shang/ShallowJail# python -c "import torch; print(torch.backends.cudnn.version())"
 91501
+```
+
+## 1.3 The impact the transformers version
+
+In our experiment, we use the `transformers==5.1.0` and have tested the code. But we found that there will have a small implementation difference when running the code with `transformers==4.57.3`, If you find some issues when running the code with older version of transformers, please modify the line `84` and `85` in `jailbreak.py`, and try again.
+
+```diff 
+with torch.no_grad():
+-    outputs_1 = self.model(inputs_1["input_ids"], output_hidden_states=True)
+-    outputs_2 = self.model(inputs_2["input_ids"], output_hidden_states=True)
++    outputs_1 = self.model(inputs_1, output_hidden_states=True)
++    outputs_2 = self.model(inputs_2, output_hidden_states=True)
 ```
 
 # 2. Start
@@ -94,7 +110,7 @@ config = {
 }
 ```
 
-it equals with:
+it will run the following two commands one by one:
 ```
 python jailbreak.py -model_path ./models/Qwen3-4B-Instruct-2507 \
                     -guard_path ./models/Qwen3Guard-Gen-4B \
@@ -115,8 +131,11 @@ python jailbreak.py -model_path ./models/Qwen3-4B-Instruct-2507 \
 
 
 
-# 3. Logs
-We collected all experiments logs and they could be downloaded from [Google drive](https://drive.google.com/file/d/1Qu3pEfdQDkjHmNd90UxRhnTNExURIL2N/view?usp=sharing). It's about 180M. Feel free to analyze it.
+# 3. Experiments Results
+We collected all experiments logs and they could be downloaded from [Google drive](https://drive.google.com/file/d/1Qu3pEfdQDkjHmNd90UxRhnTNExURIL2N/view?usp=sharing). It's about 180M.
+
+> Disclaimer: The log results may contains harmful, toxic content, please be careful when you open it. It is for educational purpose only.
+
 
 # 4. Citation
 If you have any questions, please start a issue or contact shang.liu@louisville.edu.
