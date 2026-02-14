@@ -22,7 +22,7 @@
 
 # 1. Requirements
 ## 1.1 Dependencies
-We recommend using [uv](https://github.com/ultralytics/ultralytics) to install dependencies.
+We recommend using [uv](https://github.com/astral-sh/uv) to install dependencies.
 
 ```
 > uv venv --python 3.12.12
