@@ -78,6 +78,40 @@ python download_models.py
 
 We recommend download the `Qwen/Qwen3-4B-Instruct-2507` and `Qwen/Qwen3Guard-Gen-4B` at first to start the experiments.
 
+my own files tree is shown below:
+
+```
+root@3a00f0d2bf79:~/shang/ShallowJail/models# tree
+.
+├── Qwen3-4B-Instruct-2507
+│   ├── LICENSE
+│   ├── README.md
+│   ├── config.json
+│   ├── generation_config.json
+│   ├── merges.txt
+│   ├── model-00001-of-00003.safetensors
+│   ├── model-00002-of-00003.safetensors
+│   ├── model-00003-of-00003.safetensors
+│   ├── model.safetensors.index.json
+│   ├── tokenizer.json
+│   ├── tokenizer_config.json
+│   └── vocab.json
+└── Qwen3Guard-Gen-4B
+    ├── LICENSE
+    ├── README.md
+    ├── config.json
+    ├── generation_config.json
+    ├── merges.txt
+    ├── model-00001-of-00003.safetensors
+    ├── model-00002-of-00003.safetensors
+    ├── model-00003-of-00003.safetensors
+    ├── model.safetensors.index.json
+    ├── tokenizer.json
+    ├── tokenizer_config.json
+    └── vocab.json
+```
+
+
 ## 2.2 Run the code
 Single command run:
 ```
