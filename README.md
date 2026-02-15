@@ -22,12 +22,19 @@
 
 # 1. Requirements
 ## 1.1 Dependencies
+
+Download the code:
+```
+git clone https://github.com/liuup/ShallowJail.git
+cd ShallowJail
+```
+
 We recommend using [uv](https://github.com/astral-sh/uv) to install dependencies.
 
 ```
-> uv venv --python 3.12.12
-> source .venv/bin/activate
-> uv pip install -r requirements.txt
+uv venv --python 3.12.12
+source .venv/bin/activate
+uv pip install -r requirements.txt
 ```
 
 ## 1.2 Hardware
